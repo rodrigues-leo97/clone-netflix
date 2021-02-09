@@ -1,0 +1,118 @@
+@media screen and (max-width: 700px){
+    header .container-desktop{
+        display: none;
+    }
+
+    header .container-mobile {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .btn-menu {
+        cursor: pointer;
+        color: white;
+        margin-left: 20px;
+    }
+
+    .container-mobile {
+        color: white;
+    }
+
+    .items-mobile {
+        height: 0; /*249px*/
+        overflow: hidden;
+        transition: 1s;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        background-color: black;
+        width: 100%;
+        top: 40px;
+        text-align: left;
+        padding: 0; /*20px*/
+    }
+
+    .items-mobile li {
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+
+    .container-mobile a {
+        color: white;
+    }
+
+    .container-mobile > nav a:hover {
+        color: #fff;
+    }
+
+    .container-mobile nav a {
+        text-decoration: none;
+        color: #AAA;
+        margin-right: 10px;
+    }
+
+    .container-mobile >  .logo {
+        margin-right: 4%;
+        color: var(--vermelho);
+        font-family: 'Arial Black', times;
+        font-size: 27px;
+    }
+
+    header .container-mobile {
+        display: flex; /*alinha os elementos em tela e joga tudo pra "linha"*/
+        flex-direction: row; /*por padrão o row já é colocado, mas por boas práticas sempre garanta isso*/
+        align-items: center;
+        justify-content: space-between;
+        /*para que tenha uma distância da tag ou classe anterior*/
+     }
+
+
+
+
+
+    .botoes p {
+        max-width: 95%;
+        text-align: center;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .botoes button {
+        padding: 10px 15px;
+    }
+
+    .botao {
+        margin-bottom: 6%;
+    }
+
+    .descricao {
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 470px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .descricao {
+        width: 50%;
+    }
+
+}
+
+.container-mobile {
+    display: none;
+}
+
+
+

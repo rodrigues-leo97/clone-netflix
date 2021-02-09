@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>NEWFLIX</title>
+</head>
+<body>
+    <header>
+
+        <div class="container-mobile">
+            <i class="btn-menu fas fa-bars"></i>
+            <h2 class="logo">NEWFLIX</h2><!--logo-->
+                <nav class="items-mobile">
+                   <li><a href="#">Inicio</a></li>
+                   <li><a href="#">Séries</a></li>
+                   <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Documentários</a></li>
+
+                </nav>
+
+        </div><!--container-mobile-->
+
+        <div class="container-desktop">
+            <h2 class="logo">NEWFLIX</h2><!--logo-->
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Documentários</a>
+
+                </nav>
+
+        </div><!--container-desktop-->
+
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                    <h3 class="titulo">HOUSE OF CARDS</h3>
+                        <p class="descricao">Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington.</p>
+                </div><!--container--> 
+
+                <div class="botoes">
+               
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+
+                       <a href="https://www.youtube.com/watch?v=SvSkxBYuoQY"><button  role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button></a>
+                    <p> Num drama sobre as consequências do poder e da corrupção, Francis Underwood (Kevin Spacey) está sedento por sucesso e nada o detém. Trata-se de uma história onde são ultrapassados os limites para satisfazer o desejo de um homem que ambiciona governar o mundo.</p>
+                    
+                </div><!--botoes-->
+       
+
+        </div><!--filme-principal-->
+    </main><!--miolo do site, ou seja, motores de busca irão entender que isso será o conteúdo principal do site-->
+
+        <div class="carrossel-filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/mini1.jpg" alt="Imagem de filme" srcset="">
+                </div><!--item-->    
+
+                <div class="item">
+                    <img class="box-filme" src="img/mini2.jpg" alt="Imagem de filme" srcset="">
+                </div><!--item-->    
+
+                <div class="item">
+                    <img class="box-filme" src="img/mini3.jpg" alt="Imagem de filme" srcset="">
+                </div><!--item-->    
+                <div class="item">
+                    <img class="box-filme" src="img/mini4.jpg" alt="Imagem de filme" srcset="">
+                </div><!--item-->    
+                <div class="item">
+                    <img class="box-filme" src="img/mini5.jpg" alt="Imagem de filme" srcset="">
+                </div><!--item-->    
+                <div class="item">
+                    <img class="box-filme" src="img/mini6.jpg" alt="Imagem de filme" srcset="">
+                </div><!--item-->   
+                
+                <div class="item">
+                    <img class="box-filme" src="img/mini7.jpg" alt="Imagem de filme" srcset="">
+                </div><!--item-->    
+
+                <div class="item">
+                    <img class="box-filme" src="img/mini8.jpg" alt="Imagem de filme" srcset="">
+                </div><!--item--> 
+                
+                <div class="item">
+                    <img class="box-filme" src="img/mini9.jpg" alt="Imagem de filme" srcset="">
+                </div><!--item-->    
+
+                <div class="item">
+                    <img class="box-filme" src="img/mini10.jpg" alt="Imagem de filme" srcset="">
+                </div><!--item-->    
+            </div><!--owl-carousel owl-theme-->
+        </div><!--carrossel filmes-->
+
+
+    <script src="https://kit.fontawesome.com/7e0e869591.js" crossorigin="anonymous"></script>
+    
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+
+    <!--Script para animações-->
+
+    <script>
+        var span = document.querySelector('.botoes button');
+
+            span.addEventListener('click', ()=>{
+                var conteudo = document.querySelector('.botoes p');
+
+                if(conteudo.classList.contains('mostrar')){
+                        //para esconder o conteúdo
+                    conteudo.classList.remove('mostrar');
+                    
+                    span.innerHTML = '<i class="fas fa-info-circle"></i>MAIS INFORMAÇÕES';
+                }else{
+                    //mostrar o conteudo
+                conteudo.classList.add('mostrar');
+                span.innerHTML = 'OCULTAR';
+                    
+                }
+            });
+
+            
+
+           
+            var el = document.querySelector(' .btn-menu');
+
+        el.addEventListener('click', ()=>{
+            let menu = document.querySelector('.items-mobile');
+
+            if(menu.classList.contains('mostrar2')){
+                menu.classList.remove('mostrar2');
+            }else{
+                menu.classList.add('mostrar2');
+            }
+});
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
